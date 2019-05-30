@@ -31,8 +31,18 @@ def initial_round
   sum
 end
 
-def hit?
-  # code hit? here
+def hit?(card_total)
+  prompt_user
+  answer = get_user_input
+  if answer == "h"
+    card_dealt = deal_card
+    card_total += card_dealt
+  elsif answer != "h" || answer != "s"
+    invalid_command
+    prompt_user
+  else answer == "s"
+    break    
+  end  
 end
 
 def invalid_command
