@@ -44,7 +44,6 @@ def hit?(card_total)
     card_total
   else answer == "s"
     card_total
-    break
   end
 end
 
