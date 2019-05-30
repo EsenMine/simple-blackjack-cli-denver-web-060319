@@ -60,7 +60,7 @@ def runner
   until initial_round == 21
     hit?(initial_round)
     display_card_total(hit?(initial_round))
-    binding.pry
+    #binding.pry
   end
 end_game
 end
